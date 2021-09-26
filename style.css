@@ -1,0 +1,17 @@
+.chess {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    justify-content: center;
+}
+
+.players img {
+    object-fit: cover;
+    aspect-ratio: 1 / 1;
+    width: 5vw;
+    border-radius: 10%;
+}
+
+.board {
+    grid-area: 2 / 2 / span 4 / span 4;
+}

@@ -53,8 +53,9 @@ p {
 .player-2 .description {
     grid-area: 1 / 1;
     text-align: right;
-    justify-content: center;
+    /* justify-content: center;
     align-content: center;
+    zde mi nešlo nastavit umístění jména hráče a jeho barvy na střed obrázku, ačkoliv jsem zkoušela všechno možné*/
 }
 
 .player-2 p {
@@ -63,8 +64,7 @@ p {
 }
 
 .chessboard {
-    /* display: grid;
-    grid-template: repeat(8, 1fr) / repeat(8, 1fr); */
+/*tady mi nešlo nastavit pozadí, aby se jeho jeden element opakoval tak, aby tvořil šachovnici o 8 polích, použila jsem background-size: 25% 25%;, nicméně se celá plocha nevyplnila tak, jak měla*/
     background-image: url(obrazky/bonus/sachovnice.svg);
     aspect-ratio: 1 / 1;
     background-size: 25% 25%;

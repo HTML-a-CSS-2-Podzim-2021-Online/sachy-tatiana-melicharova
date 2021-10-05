@@ -64,23 +64,19 @@ p {
 }
 
 .chessboard {
-/*tady mi nešlo nastavit pozadí, aby se jeho jeden element opakoval tak, aby tvořil šachovnici o 8 polích, použila jsem background-size: 25% 25%;, nicméně se celá plocha nevyplnila tak, jak měla*/
+/*tady mi nešlo nastavit pozadí, aby se jeho jeden element opakoval tak, aby tvořil šachovnici o 8 polích, použila jsem background-size: 25% 25%;, nicméně se celá plocha nevyplnila tak, jak měla (vpravo a dole je trochu bílého místa)*/
     background-image: url(obrazky/bonus/sachovnice.svg);
     aspect-ratio: 1 / 1;
     background-size: 25% 25%;
     margin-bottom: 10vh;
-    position: relative;
+    border: 10px solid #3f2c16;
+    border-radius: 5px; 
 }
 
 .chessboard::after {
     content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;    
-    border: 10px solid #3f2c16;
-    border-radius: 5px;  
+    display: block;
+   
 }
 
 .figures {
